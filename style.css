@@ -554,6 +554,10 @@ HEADER // NAVBAR
   text-align: center;
 }
 
+#banner-information .servicesMobile {
+  display: none;
+}
+
 #banner-information .services {
   font-family: 'Amiko', sans-serif;
   display: -webkit-box;
@@ -668,5 +672,454 @@ HEADER // NAVBAR
 
 #footer .links-footer .orange-link {
   color: #EF7D00;
+}
+
+@media screen and (max-width: 890px) {
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    height: auto;
+    width: 100%;
+  }
+  html {
+    width: 100%;
+  }
+  #header header .top-bar-creation-date {
+    height: 2vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    font-size: 0.5rem;
+    background: #414141;
+    background: radial-gradient(circle, #414141 0%, #111111 100%, black 100%);
+    color: white;
+    font-family: 'Amiko', sans-serif;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header header .header-logo-informations-account {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Amiko', sans-serif;
+    font-size: 0.9rem;
+  }
+  #header header .header-logo-informations-account .logo img {
+    position: relative;
+    top: 1vh;
+    left: 15vw;
+    height: 5rem;
+  }
+  #header header .header-logo-informations-account .account {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    left: 12vw;
+    height: 10vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header header .header-logo-informations-account .account a {
+    text-decoration: none;
+    color: black;
+  }
+  #header header .header-logo-informations-account .account .research-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    height: 5vh;
+    top: 100%;
+    left: -10%;
+  }
+  #header header .header-logo-informations-account .account .research-input .search-bloc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: black;
+    width: 3.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header header .header-logo-informations-account .account .research-input .input-search input {
+    height: 5vh;
+    min-width: 60vw;
+    border: none;
+    -webkit-box-shadow: 10px 5px 35px -14px #616161;
+    box-shadow: 10px 5px 35px -14px #616161;
+    padding-left: 1vw;
+  }
+  #header header .header-logo-informations-account .account .research-input .input-search input ::-webkit-input-placeholder {
+    color: black;
+    opacity: 1;
+  }
+  #header header .header-logo-informations-account .account .research-input .input-search input :-ms-input-placeholder {
+    color: black;
+    opacity: 1;
+  }
+  #header header .header-logo-informations-account .account .research-input .input-search input ::-ms-input-placeholder {
+    color: black;
+    opacity: 1;
+  }
+  #header header .header-logo-informations-account .account .research-input .input-search input ::placeholder {
+    color: black;
+    opacity: 1;
+  }
+  #header header .header-logo-informations-account .account .telephone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5vh;
+    padding-left: 30vw;
+  }
+  #header header .header-logo-informations-account .account .telephone .telephone-bloc {
+    width: 5rem;
+  }
+  #header header .header-logo-informations-account .account .telephone .telephone-bloc img {
+    height: 3rem;
+  }
+  #header header .header-logo-informations-account .account .telephone .telephone-number {
+    display: none;
+  }
+  #header header .header-logo-informations-account .account .my-account .account-bloc {
+    width: 5rem;
+  }
+  #header header .header-logo-informations-account .account .my-account .account-bloc img {
+    height: 3rem;
+  }
+  #header header .header-logo-informations-account .account .my-account .account-link {
+    display: none;
+  }
+  #header header .header-logo-informations-account .account .cart .cart-bloc {
+    width: 5rem;
+  }
+  #header header .header-logo-informations-account .account .cart .cart-bloc img {
+    height: 3rem;
+  }
+  #header header .header-logo-informations-account .account .cart .cart-link {
+    display: none;
+  }
+  #header header .navbar {
+    display: none;
+  }
+  #header .background-image {
+    margin-top: 8vh;
+    height: 50vh;
+    width: 100vw;
+  }
+  #header .background-image img {
+    height: 45vh;
+    width: 100vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Amiko', sans-serif;
+  }
+  #products fieldset {
+    height: 100vh;
+    width: 90vw;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #products fieldset .products-legend {
+    text-align: center;
+    background: black;
+    padding-top: 1.25vh;
+    color: white;
+    height: 5vh;
+    width: 35vw;
+    font-size: 1.3rem;
+  }
+  #products fieldset .list-products {
+    display: block;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #products fieldset .list-products .gray-column {
+    background-color: lightgray;
+    opacity: 0.3;
+    height: 13vh;
+    width: 3px !important;
+  }
+  #products fieldset .list-products li {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+  }
+  #products fieldset .list-products li:hover {
+    color: #EF7D00;
+  }
+  #products fieldset .list-products li span {
+    padding-top: 1vh;
+    display: block;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #products fieldset .list-products li span i {
+    color: #EF7D00;
+    margin-left: 0.5vw;
+  }
+  #informations {
+    padding-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Amiko', sans-serif;
+  }
+  #informations fieldset {
+    height: auto;
+    width: 90vw;
+  }
+  #informations fieldset .products-legend {
+    text-align: center;
+    background: black;
+    padding-top: 1.25vh;
+    color: white;
+    height: 5vh;
+    width: 35vw;
+    font-size: 1.3rem;
+  }
+  #informations fieldset .list-products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #informations fieldset .list-products .mobile-product {
+    display: block;
+  }
+  #informations fieldset .list-products li {
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    display: none;
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
+    text-align: center;
+  }
+  #informations fieldset .list-products li:hover {
+    color: #EF7D00;
+  }
+  #informations fieldset .list-products li span {
+    display: block;
+  }
+  #informations fieldset .list-products li .product-title, #informations fieldset .list-products li .product-price {
+    font-weight: 800;
+  }
+  #informations fieldset .list-products li .product-price {
+    margin-top: 1vh;
+  }
+  #informations fieldset .list-products .gray-column {
+    display: none;
+    background-color: lightgray;
+    opacity: 0.3;
+    height: 35vh;
+    width: 3px !important;
+  }
+  #informations fieldset .more-products {
+    display: none;
+    position: relative;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  #informations fieldset .more-products button {
+    background: transparent;
+    font-size: 1.5rem;
+    border: 2px solid #EF7D00;
+    color: #EF7D00;
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    font-weight: 500;
+  }
+  #banner-information {
+    margin-top: 5vh;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Amiko', sans-serif;
+  }
+  #banner-information .banner-shipping-payment {
+    background: #414141;
+    background: radial-gradient(circle, #414141 0%, #111111 100%, black 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    width: 100vw;
+    height: 15vh;
+  }
+  #banner-information .banner-shipping-payment ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #banner-information .banner-shipping-payment ul li {
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+  }
+  #banner-information .banner-shipping-payment ul li img {
+    padding-bottom: 1vh;
+  }
+  #banner-information .banner-shipping-payment ul li span {
+    display: block;
+    font-weight: 600;
+    text-align: center;
+  }
+  #banner-information .services fieldset {
+    display: none;
+  }
+  #banner-information .servicesMobile {
+    font-family: 'Amiko', sans-serif;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #banner-information .servicesMobile .span-block-services {
+    text-align: center;
+    background: transparent;
+    width: 100%;
+    color: #EF7D00;
+    height: 8vh;
+    -webkit-box-shadow: 10px 5px 35px -14px #616161;
+    box-shadow: 10px 5px 35px -14px #616161;
+  }
+  #banner-information .servicesMobile .span-block-services span, #banner-information .servicesMobile .span-block-services h3 {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  #banner-information .servicesMobile .span-block-services h3 {
+    margin-bottom: 1.5vh;
+  }
+  #banner-information .servicesMobile .pc-configuration-bloc {
+    margin-top: 5vh;
+    width: 100%;
+    margin-right: 0rem;
+  }
+  #banner-information .servicesMobile .pc-configuration-bloc img {
+    width: 100%;
+  }
+  #banner-information .servicesMobile .services-bloc {
+    margin-top: 5vh;
+  }
+  #banner-information .servicesMobile .services-bloc img {
+    width: 100%;
+  }
+  #banner-information .servicesMobile .telemaintenance-bloc {
+    margin-top: 5vh;
+  }
+  #banner-information .servicesMobile .telemaintenance-bloc img {
+    width: 100%;
+  }
+  #footer {
+    display: block;
+    padding-top: 3vh;
+  }
+  #footer .text-footer {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 5vh;
+  }
+  #footer .text-footer h3 {
+    text-align: start;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+  }
+  #footer .text-footer p {
+    font-size: 0.6rem;
+    font-family: 'Cambay', sans-serif;
+    text-align: justify;
+  }
+  #footer .links-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    min-height: 23vh;
+    width: 100vw;
+    font-family: 'Amiko', sans-serif;
+    color: white;
+    background: #414141;
+    background: radial-gradient(circle, #414141 0%, #111111 100%, black 100%);
+  }
+  #footer .links-footer ul {
+    margin-top: 3vh;
+  }
+  #footer .links-footer ul .table-title {
+    margin-bottom: 2.5vh;
+    font-size: 0.8rem;
+  }
+  #footer .links-footer ul li {
+    list-style: none;
+    line-height: 1.5rem;
+    font-weight: 100;
+    font-size: 0.5rem;
+  }
+  #footer .links-footer .orange-link {
+    color: #EF7D00;
+  }
 }
 /*# sourceMappingURL=style.css.map */
