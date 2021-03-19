@@ -411,6 +411,10 @@ HEADER // NAVBAR
   margin-left: 0.5vw;
 }
 
+#products-mobile {
+  display: none;
+}
+
 #informations {
   padding-top: 5vh;
   display: -webkit-box;
@@ -829,23 +833,23 @@ HEADER // NAVBAR
        object-fit: cover;
   }
   #products {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     font-family: 'Amiko', sans-serif;
   }
-  #products fieldset {
+  #products *
+.desktop-products {
     height: 100vh;
     width: 90vw;
-    display: block;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #products fieldset .products-legend {
+  #products *
+.desktop-products .products-legend {
     text-align: center;
     background: black;
     padding-top: 1.25vh;
@@ -854,8 +858,12 @@ HEADER // NAVBAR
     width: 35vw;
     font-size: 1.3rem;
   }
-  #products fieldset .list-products {
-    display: block;
+  #products *
+.desktop-products .list-products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     width: 100%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -864,23 +872,27 @@ HEADER // NAVBAR
         -ms-flex-align: center;
             align-items: center;
   }
-  #products fieldset .list-products .gray-column {
+  #products *
+.desktop-products .list-products .gray-column {
     background-color: lightgray;
     opacity: 0.3;
     height: 13vh;
     width: 3px !important;
   }
-  #products fieldset .list-products li {
+  #products *
+.desktop-products .list-products li {
     display: inline-block;
     width: 50%;
     text-align: center;
     -webkit-transition: 0.15s linear;
     transition: 0.15s linear;
   }
-  #products fieldset .list-products li:hover {
+  #products *
+.desktop-products .list-products li:hover {
     color: #EF7D00;
   }
-  #products fieldset .list-products li span {
+  #products *
+.desktop-products .list-products li span {
     padding-top: 1vh;
     display: block;
     font-weight: 600;
@@ -891,9 +903,62 @@ HEADER // NAVBAR
         -ms-flex-align: center;
             align-items: center;
   }
-  #products fieldset .list-products li span i {
+  #products *
+.desktop-products .list-products li span i {
     color: #EF7D00;
     margin-left: 0.5vw;
+  }
+  #products-mobile {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90vw;
+    margin-left: 5vw;
+    font-family: 'Amiko', sans-serif;
+  }
+  #products-mobile .bloc-product {
+    margin-top: 3vh;
+    display: block;
+  }
+  #products-mobile .bloc-product img {
+    height: 8rem;
+    text-align: center;
+  }
+  #products-mobile .bloc-product span {
+    font-size: 2rem;
+    margin-top: 0.5vh;
+    display: block;
+  }
+  #products-mobile .bloc-product span i {
+    margin-left: 1rem;
+  }
+  #products-mobile .products-legend {
+    text-align: center;
+    background: black;
+    padding-top: 1.25vh;
+    color: white;
+    height: 5vh;
+    width: 35vw;
+    font-size: 1.3rem;
+  }
+  #products-mobile fieldset {
+    text-align: center;
+  }
+  #products-mobile .list-products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #products-mobile .list-products .gray-column {
+    background-color: lightgray;
+    opacity: 0.3;
+    height: 13vh;
+    width: 3px !important;
   }
   #informations {
     padding-top: 5vh;
