@@ -1,6 +1,7 @@
 const navbar = document.getElementById("navbar-products");
 const navbarHead = document.getElementById("main-navbar");
 const liColor = document.querySelectorAll('.menu-before');
+const tableLine = document.querySelectorAll('.table-line');
 
 
 function showNavbar() {
@@ -35,23 +36,8 @@ function showNavbar() {
     }
 }
 
-function hover(element)
-{
-  if(navbarHead.style.background ="#EF7D00")
-  {
-      element.style.color = "white";
-      element.style.borderBottom = "3px solid black"
-  }
-  else{
-      element.style.color = "black";
-  }
 
+tableLine.forEach(element => {
   
-}
-function hoverOff(element)
-{
-    element.style.color = "black";
-    element.style.borderBottom = "none"
-}
-
+});
 

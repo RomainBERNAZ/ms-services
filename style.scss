@@ -232,6 +232,16 @@ HEADER // NAVBAR
                     display: flex;
                     align-items: center;
                     width: 23.33vw;
+                    span{
+                        height: 100%;
+                        padding-top: 7.5%;
+                        padding-right:5%;
+                        padding-left:5%;
+                        &:hover{
+                            background:#EF7D00;
+                        }
+                    }
+                    
 
             }
             .last-product{

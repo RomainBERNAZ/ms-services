@@ -349,6 +349,17 @@ HEADER // NAVBAR
   width: 23.33vw;
 }
 
+#header header .navbar .navbar-products td span {
+  height: 100%;
+  padding-top: 7.5%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+#header header .navbar .navbar-products td span:hover {
+  background: #EF7D00;
+}
+
 #header header .navbar .navbar-products .last-product {
   border-bottom: none;
 }
