@@ -162,7 +162,8 @@ HEADER // NAVBAR
             font-family: 'Amiko', sans-serif;
             height: 5vh;
             align-items: center;
-                li{
+
+                .menu-before{
                     display: flex;
                     align-items: center;
                     list-style: none;
@@ -170,8 +171,26 @@ HEADER // NAVBAR
                     padding-right: 1vw;
                     padding-left: 0.9vw;
                     transition: 0.2s linear;
+
                     &:hover{
                         color: #EF7D00;
+                    }
+                    span{
+                        padding-left: 0.4vw;
+                        font-size: 0.7rem;
+                    }
+                }
+                .menu-after{
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    font-weight: 600;
+                    padding-right: 1vw;
+                    padding-left: 0.9vw;
+                    transition: 0.2s linear;
+
+                    &:hover{
+                        color: white;
                     }
                     span{
                         padding-left: 0.4vw;
@@ -187,26 +206,32 @@ HEADER // NAVBAR
             .navbar-products{
                 display: none;
                 width: 70vw;
+                height: auto;
                 position: relative;
                 justify-content: center;
                 background: white ;
                 border: 1px solid gray;
                 left: 15vw;
                 font-family: 'Amiko', sans-serif;
+                font-size: 0.95rem;
                 font-weight: 700;
-                height: 5vh;
                 align-items: center;
                 img{
                     margin-left: 3vw;
                     max-height: 6vh;
-                    margin-right: 3vw;
+                    margin-right: 2.8vw;
+                }
+                tr{
+                    display: flex;
+                    border-bottom: 1px solid lightgray;
+                    .first-column-product{
+                        border-right: 1px solid lightgray;
+                    }
                 }
                 td{
                     display: flex;
-                    max-width: 30%;
                     align-items: center;
-                    border-right: 1px solid gray;
-                    border-bottom: 1px solid gray;
+                    width: 23.33vw;
 
             }
             .last-product{

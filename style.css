@@ -249,7 +249,7 @@ HEADER // NAVBAR
           align-items: center;
 }
 
-#header header .navbar .main-navbar li {
+#header header .navbar .main-navbar .menu-before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,11 +264,35 @@ HEADER // NAVBAR
   transition: 0.2s linear;
 }
 
-#header header .navbar .main-navbar li:hover {
+#header header .navbar .main-navbar .menu-before:hover {
   color: #EF7D00;
 }
 
-#header header .navbar .main-navbar li span {
+#header header .navbar .main-navbar .menu-before span {
+  padding-left: 0.4vw;
+  font-size: 0.7rem;
+}
+
+#header header .navbar .main-navbar .menu-after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-weight: 600;
+  padding-right: 1vw;
+  padding-left: 0.9vw;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+#header header .navbar .main-navbar .menu-after:hover {
+  color: white;
+}
+
+#header header .navbar .main-navbar .menu-after span {
   padding-left: 0.4vw;
   font-size: 0.7rem;
 }
@@ -282,6 +306,7 @@ HEADER // NAVBAR
 #header header .navbar .navbar-products {
   display: none;
   width: 70vw;
+  height: auto;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -290,8 +315,8 @@ HEADER // NAVBAR
   border: 1px solid gray;
   left: 15vw;
   font-family: 'Amiko', sans-serif;
+  font-size: 0.95rem;
   font-weight: 700;
-  height: 5vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -300,19 +325,28 @@ HEADER // NAVBAR
 #header header .navbar .navbar-products img {
   margin-left: 3vw;
   max-height: 6vh;
-  margin-right: 3vw;
+  margin-right: 2.8vw;
+}
+
+#header header .navbar .navbar-products tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+#header header .navbar .navbar-products tr .first-column-product {
+  border-right: 1px solid lightgray;
 }
 
 #header header .navbar .navbar-products td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 30%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-right: 1px solid gray;
-  border-bottom: 1px solid gray;
+  width: 23.33vw;
 }
 
 #header header .navbar .navbar-products .last-product {

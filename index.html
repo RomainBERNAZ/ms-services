@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="./index.js"></script>
     <title>Document</title>
     
 </head>
@@ -55,32 +54,40 @@
             </div>
             </div>
         </div>
-        <div class="navbar" id="navbar" onclick="myFunction()">
-            <ul class="main-navbar">
-                <div class="orange-column"></div><li>NOS PRODUITS<span>></span></li>
-                <div class="orange-column"></div><li>NOS CONFIGURATEURS<span>></span></li>
-                <div class="orange-column"></div><li>NOS NOUVEAUTES<span>></span></li>
-                <div class="orange-column"></div><li>NOTRE MAGASIN<span>></span></li>
-                <div class="orange-column"></div><li>CONTACT<span>></span></li><div class="orange-column"></div>
+        <div class="navbar" id="navbar" onclick="showNavbar()">
+            <ul class="main-navbar" id="main-navbar">
+                <div class="orange-column"></div><li class="menu-before">NOS PRODUITS<span>></span></li>
+                <div class="orange-column"></div><li class="menu-before">NOS CONFIGURATEURS<span>></span></li>
+                <div class="orange-column"></div><li class="menu-before">NOS NOUVEAUTES<span>></span></li>
+                <div class="orange-column"></div><li class="menu-before">NOTRE MAGASIN<span>></span></li>
+                <div class="orange-column"></div><li class="menu-before">CONTACT<span>></span></li><div class="orange-column"></div>
             </ul>
-            <table class="navbar-products">
+            <table class="navbar-products" id="navbar-products">
                 <tr>
-                  <td><img src="./images/Fichier 17.png" alt=""><span>PC PORTABLES</span></td>
+                  <td class="first-column-product"><img src="./images/Fichier 17.png" alt=""><span>PC PORTABLES</span></td>
+                  <td><img src="./images/Fichier 17.png" alt=""><span>Processeurs</span></td>
+                  <td><img src="./images/Fichier 17.png" alt=""><span>Boitiers Alimentation</span></td>
                 </tr>
                 <tr>
-                  <td><img src="./images/Fichier 15.png" alt=""><span>PC DE BUREAU</span></td>
+                  <td class="first-column-product"><img src="./images/Fichier 15.png" alt=""><span>PC DE BUREAU</span></td>
+                  <td><img src="./images/Fichier 15.png" alt=""><span>Ventilateur</span></td>
+                  <td><img src="./images/Fichier 15.png" alt=""><span>Carte Interne</span></td>
                 </tr>
                 <tr>
-                  <td><img src="./images/Fichier 19.png" alt=""><span>COMPOSANTS</span></td>
+                  <td class="first-column-product"><img src="./images/Fichier 19.png" alt=""><span>COMPOSANTS</span></td>
+                  <td><img src="./images/Fichier 19.png" alt=""><span>Carte mères mémoire</span></td>
+                  <td><img src="./images/Fichier 19.png" alt=""><span>Connectique</span></td>
                 </tr>
                 <tr>
-                  <td><img src="./images/Fichier 17.png" alt=""><span>PERIPHERIQUES</span></td>
+                  <td class="first-column-product"><img src="./images/Fichier 17.png" alt=""><span>PERIPHERIQUES</span></td>
+                  <td><img src="./images/Fichier 17.png" alt=""><span>Cartes graphiques</span></td>
                 </tr>
                 <tr>
-                  <td><img src="./images/Fichier 18.png" alt=""><span>RESEAUX</span></td>
+                  <td class="first-column-product"><img src="./images/Fichier 18.png" alt=""><span>RESEAUX</span></td>
+                  <td><img src="./images/Fichier 18.png" alt=""><span>Lecteurs/Graveurs</span></td>
                 </tr>
-                <tr>
-                    <td class="last-product"><img src="./images/Fichier 16.png" alt=""><span>ACCESSOIRES</span></td>
+                <tr class="last-product">
+                    <td class="first-column-product"><img src="./images/Fichier 16.png" alt=""><span>ACCESSOIRES</span></td>
                 </tr>
               </table>
         </div>
@@ -369,5 +376,6 @@
             </ul>
     </div>
 </section>
+<script type="text/javascript" src="./index.js"></script>
 </body>
 </html>
