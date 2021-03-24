@@ -605,6 +605,31 @@ HEADER // NAVBAR
                         #menuToggle input:checked ~ .span-visible-menu-2{
                           transform: rotate(-45deg) translate(-5px, 15px);
                         }
+                .menu-mobile-nav{
+                    position: absolute;
+                    top: 10vh;
+                    z-index: 5;
+                    background:#EF7D00;
+                    left: 5vw;
+                    ul{
+                        li{
+                            padding: 1.5rem;
+                            margin-left: 4vw;
+                            margin-right: 4vw;
+                            list-style: none;
+                            font-size: 2rem;
+                            min-width: 60vw;
+                            border-bottom: 2px solid black;
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                            i{
+                                float: right;
+                            }
+                        }
+                    }
+                }
                 .logo{
                     img{
                         position: relative;

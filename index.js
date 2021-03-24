@@ -38,16 +38,16 @@ function showNavbar() {
 
 
 const showMenu = () => {
-  const menu = document.getElementById('nav-mobile');
-  if (menu.style.opacity === '1') {
-      menu.style.opacity = '0';
-      setTimeout(function(){
-          menu.style.display='none'}, 200);
-    } else {
-      menu.style.display='block'
-      setTimeout(function(){
-      menu.style.opacity = '1';
-  },100)
+  const menuMobile = document.querySelector('.menu-mobile-nav')
+
+  if(menuMobile.style.display==="block"){
+    menuMobile.style.display="none"
+  }
+  else 
+    {
+      menuMobile.style.display="block"
     }
+
+
 }
 
