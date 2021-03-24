@@ -32,6 +32,9 @@ HEADER // NAVBAR
             display: flex;
             font-family: 'Amiko', sans-serif;
             font-size: 0.9rem;
+            #menuToggle{
+                display: none;
+            }
             .logo{
                 img{
                     position: relative;
@@ -243,6 +246,9 @@ HEADER // NAVBAR
                     }
                     
 
+            }
+            .first-product{
+                border-right: 1px solid lightgray;
             }
             .last-product{
                 border-bottom: none;
@@ -549,11 +555,61 @@ HEADER // NAVBAR
                 display: flex;
                 font-family: 'Amiko', sans-serif;
                 font-size: 0.9rem;
+                #menuToggle{
+                    display: block;
+                    position: absolute;
+                    top: 3%;
+                    left: 4%;
+                    z-index: 4;
+                    input{
+                      display: block;
+                      width: 100px;
+                      height: 80px;
+                      position: absolute;
+                      top: -7px;
+                      left: -5px;
+                      cursor: pointer;
+                      opacity: 0; /* hide this */
+                      z-index: 2; /* and place it over the hamburger */
+                      -webkit-touch-callout: none;
+                      
+                    }
+                    h2{
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                    span{
+                        display: block;
+                        width: 12vw;
+                        height: 10px;
+                        margin-bottom: 5px;
+                        position: relative;
+                        background: #EF7D00;
+                        z-index: 1;
+                        transform-origin: 13px 0px;
+                        transition: transform 0.1s linear,
+                            }
+                                }
+                        #menuToggle input:checked ~ span{
+                          opacity: 1;
+                          transform: rotate(-45deg) translate(-2px, -1px);
+                          background: #EF7D00;
+                        }
+                        #menuToggle input:checked ~ .span-transparent-menu{
+                          opacity: 0;
+                          transform: rotate(0deg);
+                        }
+                        #menuToggle input:checked ~ .span-visible-menu-1{
+                          transform: rotate(45deg) translate(0px, -22px);
+                        }
+                        #menuToggle input:checked ~ .span-visible-menu-2{
+                          transform: rotate(-45deg) translate(-5px, 15px);
+                        }
                 .logo{
                     img{
                         position: relative;
                         top: 1vh;
-                        left: 15vw;
+                        left: 18vw;
                         height: 5rem;
                     }
                 }

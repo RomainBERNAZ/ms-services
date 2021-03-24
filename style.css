@@ -42,6 +42,10 @@ HEADER // NAVBAR
   font-size: 0.9rem;
 }
 
+#header header .header-logo-informations-account #menuToggle {
+  display: none;
+}
+
 #header header .header-logo-informations-account .logo img {
   position: relative;
   top: -1.8vh;
@@ -358,6 +362,10 @@ HEADER // NAVBAR
 
 #header header .navbar .navbar-products td span:hover {
   background: #EF7D00;
+}
+
+#header header .navbar .navbar-products .first-product {
+  border-right: 1px solid lightgray;
 }
 
 #header header .navbar .navbar-products .last-product {
@@ -762,10 +770,69 @@ HEADER // NAVBAR
     font-family: 'Amiko', sans-serif;
     font-size: 0.9rem;
   }
+  #header header .header-logo-informations-account #menuToggle {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    z-index: 4;
+  }
+  #header header .header-logo-informations-account #menuToggle input {
+    display: block;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  #header header .header-logo-informations-account #menuToggle h2 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  #header header .header-logo-informations-account #menuToggle span {
+    display: block;
+    width: 12vw;
+    height: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #EF7D00;
+    z-index: 1;
+    -webkit-transform-origin: 13px 0px;
+            transform-origin: 13px 0px;
+    -webkit-transition: -webkit-transform 0.1s linear;
+    transition: -webkit-transform 0.1s linear;
+    transition: transform 0.1s linear;
+    transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+  }
+  #header header .header-logo-informations-account #menuToggle input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(-45deg) translate(-2px, -1px);
+            transform: rotate(-45deg) translate(-2px, -1px);
+    background: #EF7D00;
+  }
+  #header header .header-logo-informations-account #menuToggle input:checked ~ .span-transparent-menu {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  #header header .header-logo-informations-account #menuToggle input:checked ~ .span-visible-menu-1 {
+    -webkit-transform: rotate(45deg) translate(0px, -22px);
+            transform: rotate(45deg) translate(0px, -22px);
+  }
+  #header header .header-logo-informations-account #menuToggle input:checked ~ .span-visible-menu-2 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 15px);
+            transform: rotate(-45deg) translate(-5px, 15px);
+  }
   #header header .header-logo-informations-account .logo img {
     position: relative;
     top: 1vh;
-    left: 15vw;
+    left: 18vw;
     height: 5rem;
   }
   #header header .header-logo-informations-account .account {
