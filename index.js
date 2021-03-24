@@ -2,6 +2,8 @@ const navbar = document.getElementById("navbar-products");
 const navbarHead = document.getElementById("main-navbar");
 const liColor = document.querySelectorAll('.menu-before');
 const tableLine = document.querySelectorAll('.table-line');
+const menuMobile = document.querySelector('.menu-mobile-nav')
+const submenu = document.querySelector('.submenu-mobile');
 
 
 function showNavbar() {
@@ -38,7 +40,6 @@ function showNavbar() {
 
 
 const showMenu = () => {
-  const menuMobile = document.querySelector('.menu-mobile-nav')
 
   if(menuMobile.style.display==="block"){
     menuMobile.style.display="none"
@@ -48,6 +49,30 @@ const showMenu = () => {
       menuMobile.style.display="block"
     }
 
+
+}
+
+
+
+
+function openSubmenu(){
+  let liSub = document.querySelectorAll('.li-submenu')
+  let i = liSub.length
+  console.log(liSub);
+
+  liSub.forEach(element => {
+    element.style.display="block"
+  });
+}
+
+
+function closeSubmenu(){
+  let liSub = document.querySelectorAll('.li-submenu')
+  let j = liSub.length
+  while( j--){
+    liSub[j].style.removeProperty('display');
+  }
+  console.log(liSub);
 
 }
 

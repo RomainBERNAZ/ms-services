@@ -32,6 +32,9 @@ HEADER // NAVBAR
             display: flex;
             font-family: 'Amiko', sans-serif;
             font-size: 0.9rem;
+            .menu-mobile-nav{
+                display: none;
+            }
             #menuToggle{
                 display: none;
             }
@@ -606,6 +609,7 @@ HEADER // NAVBAR
                           transform: rotate(-45deg) translate(-5px, 15px);
                         }
                 .menu-mobile-nav{
+                    display: none;
                     position: absolute;
                     top: 10vh;
                     z-index: 5;
@@ -626,6 +630,49 @@ HEADER // NAVBAR
                             }
                             i{
                                 float: right;
+                            }
+                        }
+                    }
+                    .submenu-mobile{
+                        display: block;
+                        position: absolute;
+                        top: 0vw;
+                        left: 0vw;
+                        z-index: 100;
+                        background: white;
+                        .li-submenu{
+                            display: none;
+                        }
+                        li{
+                            display: flex;
+                            align-items: center;
+                            font-size: 1.7rem;
+                            img{
+                                height: 5rem;
+                                margin-right: 5vw;
+                            }
+                            .right-arrow-submenu{
+                                margin-left: auto;
+                            }
+                        }
+                        #top-submenu{
+                            font-size: 1.5rem;
+                            background:#EF7D00;
+                            margin: 0;
+                            color: white;
+                            height: 5vh;
+                            display: flex;
+                            align-items: center;
+                            display: none;
+                            
+                            a{
+                                text-decoration: none;
+                                color: white;
+                                margin-left: 5vw;
+                            }
+                            i{
+                                float: none;
+                                margin-right: 2vw;
                             }
                         }
                     }
